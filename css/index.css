@@ -213,3 +213,12 @@ button:hover {
     font-weight: 500;
     font-style: normal;
 }
+.darkmodediv {
+    border: 2px outset rgba(0, 0, 0, 0.2);
+    background: rgb(133,135,136);
+    background: linear-gradient(39deg, rgba(133,135,136,1) 0%, rgba(84,90,85,1) 20%, rgba(72,64,74,1) 40%, rgba(47,42,49,1) 60%, rgba(41,31,44,1) 80%, rgba(0,0,0,1) 100%);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
