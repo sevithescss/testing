@@ -6,6 +6,7 @@
     <title>Page 1 - Color Controller</title>
     <script>
         let newWindow;
+        
         function openPage2() {
             newWindow = window.open('destination.html', 'page2');
         }
@@ -13,6 +14,8 @@
         function changeWindowColor(color) {
             if (newWindow) {
                 newWindow.postMessage(color, '*');
+            } else {
+                alert('Please open Page 2 first.');
             }
         }
     </script>
