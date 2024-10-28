@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 - Choose a Color</title>
+    <script>
+        function setColorAndNavigate(color) {
+            // Set the color choice in localStorage
+            localStorage.setItem('backgroundColor', color);
+            // Navigate to Page 2
+            window.location.href = 'destination.html';
+        }
+    </script>
+</head>
+<body>
+    <h1>Select a Background Color for the Next Page</h1>
+    <button onclick="setColorAndNavigate('lightblue')">Light Blue</button>
+    <button onclick="setColorAndNavigate('lightgreen')">Light Green</button>
+    <button onclick="setColorAndNavigate('lightcoral')">Light Coral</button>
+</body>
+</html>

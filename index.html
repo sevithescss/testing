@@ -24,6 +24,21 @@
         color: #5c5c00
       }
     </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page 2 - Background Color Applied</title>
+        <script>
+            window.onload = function() {
+                // Get the background color from localStorage
+                const color = localStorage.getItem('backgroundColor');
+                if (color) {
+                    // Apply the color as the background color of the page
+                    document.body.style.backgroundColor = color;
+                    // Optionally, remove the color from localStorage after applying
+                    localStorage.removeItem('backgroundColor');
+                }
+            };
+        </script>
     <script src="js/ga4.js"></script> <!-- if you put the ga4 script in ANY other file, put a "/" before "js" -->
     <script src="js/darkmoderewrite.js"></script>
   </head>
